@@ -1,0 +1,15 @@
+﻿/*How to add comments in CSS*/
+
+/*Body will change all page content, generally a better idea to spereate it*/
+body {
+    margin: 20px;/*Slide 69 for other measuring units*/
+    background-color: rgb(350,250,240);
+    font-family: Arial, sans-serif;
+    font-size:18px;
+}
+
+/*More specific CSS, for my paragraphs*/
+p {
+    font-size:20px;
+
+}
