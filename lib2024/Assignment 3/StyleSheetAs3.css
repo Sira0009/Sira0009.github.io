@@ -10,7 +10,7 @@
 /*Astronaut animation*/
 /*Code from https://codepen.io/teerapuch/pen/vLJXeR */
 /*Editted for my own uses*/
-.astroDiv {
+.astroDiv { 
     width: 100px;
     height: 100px;
     animation-name: spin;

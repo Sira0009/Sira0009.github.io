@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Fahrenheit to Celsius conversion">
+    <meta name="keywords" content="Tempurature, convert, conversion, degree, Fahrenheit, Celsius">
+    <meta name="author" content="Zack Sirard">
+    <title>Converter</title>
+    <link href="StyleSheet.css" type="text/css" rel="stylesheet">
+    <link href="Assets/Icon.png" rel="shortcut icon">
+</head>
+<body>
+    <!--JavaScript-->
+    <script>
+        function temperatureConverter(valNum) {
+            valNum = parseFloat(valNum);
+            var setText = document.getElementById('outputCelsius').value = (valNum - 32) / 1.8;
+            document.getElementById('outputCelsius').value = setText;
+        }
+    </script>
+ <div class="OrgMaster">
+     <div class="Org">
+         <!--My webpage Header-->
+         <h1>Temperature Conversion Page</h1>
+         <!--Field entry, Fahrenheit-->
+         <p>
+             <label>Enter a temperature in degrees Fahrenheit:</label>
+             <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+                    oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+         </p>
+         <!--To indicate conversion, special characters are used-->
+         <p><b>▼Conversion▼</b></p>
+         <!--Field result, Celsuis-->
+         <p>
+             <label>Equivalent temperature in degrees Celsuis:</label>
+             <input id="outputCelsius" type="number" placeholder="Celsuis" readonly>
+         </p>
+         <button onclick="window.location.href='Assignment4_ZS.html';">
+             Refresh
+         </button>
+     </div>
+</div>
+    <!--thermometer pic-->
+    <div class="ThermoDiv">
+        <img src="Assets/Thermo.jpg">
+    </div>
+</body>
+</html>
