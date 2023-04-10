@@ -1,0 +1,162 @@
+﻿body {
+    margin: 0;
+}
+
+/*This section:
+  Code from W3Schools*/
+.icon-bar {
+    width: 100%;
+    background-color: #c2ac83;
+    overflow: auto;
+}
+
+    .icon-bar a {
+        float: left;
+        width: 20%;
+        text-align: center;
+        padding: 12px 0;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 36px;
+    }
+
+        .icon-bar a:hover {
+            background-color: #eadbc0;
+        }
+
+.active {
+    background-color: #3c301d;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3c301d;
+    color: #eadbc0;
+    text-align: center;
+}
+
+/*Watermark on top right corner of webpage*/
+.watermark {
+    transform: translate(200px,10px);
+    position:fixed;
+    height: auto;
+    width: 50px;
+}
+
+/*This section:
+  Code by Ana Tudor*/
+
+    /*Chat bubble*/
+.speech-bubble {
+    position: relative;
+    margin: .5em auto;
+    padding: 1em;
+    width: 10em;
+    height: 4em;
+    border-radius: .25em;
+    transform: rotate(-4deg) rotateY(15deg);
+    background: #c2ac83;
+    font: 2em/2 Century Gothic, Verdana, sans-serif;
+    text-align: center;
+}
+
+.speech-bubble:before, .speech-bubble:after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+}
+
+    .speech-bubble:after {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: inherit;
+        transform: rotate(2deg) translate(.35em, -.15em) scale(1.02);
+        background: #eadbc0;
+    }
+
+    .speech-bubble:before {
+        border: solid 0 transparent;
+        border-right: solid 3.5em #eadbc0;
+        border-bottom: solid .25em #c2ac83;
+        bottom: .25em;
+        left: 1.25em;
+        width: 0;
+        height: 1em;
+        transform: rotate(45deg) skewX(75deg);
+    }
+
+/*This section:
+  Code by Zack Sirard (me)*/
+
+/*Character on my webpage*/
+.cartoon {
+    width:30%;
+    float:right;
+    transform:translateX(-130px);
+}
+.ResizeCartoon {
+    width:130%;
+    height:100%;
+}
+
+/*Organization*/
+.OrgChat {
+    padding:10px;
+    float:left;
+    width:30%;
+}
+.pics {
+    border:solid #3c301d;
+    box-shadow: 0 5px 5px rgba(0,0,0,.3);
+    max-width:100%;
+    transition-duration:.5s;
+}
+.pics:hover {
+        border: solid #ffffff;
+}
+.Apics {
+    border: solid #3c301d;
+    box-shadow: 0 5px 5px rgba(0,0,0,.3);
+    max-width: 100%;
+}
+
+/*General content*/
+/*Index*/
+.content {
+    color: #3c301d;
+    text-align:center;
+    font-family: Century Gothic, Verdana, sans-serif;
+    max-width: 60%;
+    margin: auto;
+    display: flex;
+    grid-template-columns: auto auto auto;
+    padding: 7px;
+}
+.Grid {
+    border: 4px dotted #FFFFFF;
+    background-color: #eadbc0;
+    max-width: 420px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.contentGal {
+    color: #3c301d;
+    text-align: center;
+    font-family: Century Gothic, Verdana, sans-serif;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    grid-template-columns: auto auto auto;
+    padding: 7px;
+}
+.GridGal {
+    border: 4px dotted #FFFFFF;
+    background-color: #eadbc0;
+    margin: 5px;
+    padding: 10px;
+}
